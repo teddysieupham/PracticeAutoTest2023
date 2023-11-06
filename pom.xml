@@ -23,7 +23,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.13.2</version>
-			<scope>test</scope>
+			<!--<scope>test</scope> -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
@@ -115,30 +115,6 @@
 					<!--</suiteXmlFiles>-->
 					<!--<testFailureIgnore>true</testFailureIgnore>-->
 				</configuration>
-			</plugin>
-			<plugin>
-				<!--https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting-->
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>5.7.5</version>
-				<executions>
-					<execution>
-						<id>execution</id>
-						<phase>test</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<projectName>Practice2023</projectName>
-							<skip>false</skip>
-							<outputDirectory>/Pratice2023/src/report/CucumberReports</outputDirectory>
-							<inputDirectory>/Pratice2023/src/main/java/cucumberTest</inputDirectory>
-							<jsonFiles>
-								<param>**/*.json</param>
-							</jsonFiles>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
